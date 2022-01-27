@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>Editor de código pequeño</title>
+  <!-- add icon link -->
+  <link rel = "icon" href="img/editorpequeño.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main class="view">
+	<h1 class="title">Pequeño editor de código<small>HTML, JavaScript, PHP</small>
+	</h1>
+
+	<div class="window">
+		<div class="window-header">
+			<div class="action-buttons"></div>
+			<select class="language">
+				<option value="javascript" selected>JavaScript</option>
+				<option value="markup">HTML</option>
+				<option value="php">PHP</option>
+			</select>
+		</div>
+		<div class="window-body">
+			<textarea class="code-input">// ¡Elegí el lenguaje que quieras y empeza a escribir código!
+// Por ejemplo, una línea de código como esta :) .
+
+function saludar(nombre){
+    return "Bienvenido/a, " + nombre + "!";
+}
+
+window.onLoad = alert(saludar(nombre));</textarea>
+			<pre class="code-output">
+				<code class="language-javascript">
+					
+				</code>
+			</pre>
+		</div>
+	</div>
+
+</main>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js'></script>
+<script  src="main.js"></script>
+
+</body>
+</html>
